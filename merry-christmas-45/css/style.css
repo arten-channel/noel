@@ -1,0 +1,11 @@
+body {
+  background: rgb(255, 39, 64);
+}
+
+h1 {
+  font-size: 1.4em;
+  margin-left: calc(50% - 7em);
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}

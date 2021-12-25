@@ -1,0 +1,392 @@
+@import url(https://fonts.googleapis.com/css?family=Calligraffitti);
+@-webkit-keyframes s {
+  0% {
+    stroke-dasharray: 0 300;
+  }
+  100% {
+    stroke-dasharray: 300 0;
+  }
+}
+@keyframes s {
+  0% {
+    stroke-dasharray: 0 300;
+  }
+  100% {
+    stroke-dasharray: 300 0;
+  }
+}
+@-webkit-keyframes f {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(50vh);
+    opacity: 0;
+  }
+}
+@keyframes f {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(50vh);
+    opacity: 0;
+  }
+}
+html {
+  height: 100%;
+}
+
+body {
+  background: #a32300;
+  font-family: "Calligraffitti";
+  height: 100%;
+  text-align: center;
+}
+
+svg {
+  margin-top: calc(50vh - 75px);
+  width: 300px;
+}
+
+.Merry, .Christmas {
+  fill: none;
+  stroke: #fff;
+  text-shadow: 0 0 14px #a32300;
+  stroke-width: 4;
+  stroke-dasharray: 0 100;
+  text-anchor: middle;
+}
+
+.Merry {
+  font-size: 44px;
+}
+.Merry tspan:nth-child(1) {
+  -webkit-animation: s 2s 1s linear forwards;
+          animation: s 2s 1s linear forwards;
+}
+.Merry tspan:nth-child(2) {
+  -webkit-animation: s 2s 2s linear forwards;
+          animation: s 2s 2s linear forwards;
+}
+.Merry tspan:nth-child(3) {
+  -webkit-animation: s 2s 3s linear forwards;
+          animation: s 2s 3s linear forwards;
+}
+.Merry tspan:nth-child(4) {
+  -webkit-animation: s 2s 4s linear forwards;
+          animation: s 2s 4s linear forwards;
+}
+.Merry tspan:nth-child(5) {
+  -webkit-animation: s 2s 5s linear forwards;
+          animation: s 2s 5s linear forwards;
+}
+
+.Christmas {
+  font-size: 64px;
+  stroke-width: 6;
+}
+.Christmas tspan:nth-child(1) {
+  -webkit-animation: s 2s 6s linear forwards;
+          animation: s 2s 6s linear forwards;
+}
+.Christmas tspan:nth-child(2) {
+  -webkit-animation: s 2s 7s linear forwards;
+          animation: s 2s 7s linear forwards;
+}
+.Christmas tspan:nth-child(3) {
+  -webkit-animation: s 2s 8s linear forwards;
+          animation: s 2s 8s linear forwards;
+}
+.Christmas tspan:nth-child(4) {
+  -webkit-animation: s 2s 9s linear forwards;
+          animation: s 2s 9s linear forwards;
+}
+.Christmas tspan:nth-child(5) {
+  -webkit-animation: s 2s 10s linear forwards;
+          animation: s 2s 10s linear forwards;
+}
+.Christmas tspan:nth-child(6) {
+  -webkit-animation: s 2s 11s linear forwards;
+          animation: s 2s 11s linear forwards;
+}
+.Christmas tspan:nth-child(7) {
+  -webkit-animation: s 2s 12s linear forwards;
+          animation: s 2s 12s linear forwards;
+}
+.Christmas tspan:nth-child(8) {
+  -webkit-animation: s 2s 13s linear forwards;
+          animation: s 2s 13s linear forwards;
+}
+.Christmas tspan:nth-child(9) {
+  -webkit-animation: s 2s 14s linear forwards;
+          animation: s 2s 14s linear forwards;
+}
+
+.Snow {
+  position: absolute;
+  filter: blur(1px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.Snow-flake {
+  -webkit-animation: f 4s linear infinite;
+          animation: f 4s linear infinite;
+  display: inline-block;
+  border-radius: 50%;
+  background: #fff;
+  margin: 0 10px 0;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-40px);
+  opacity: 0.5;
+}
+.Snow-flake:nth-child(1) {
+  -webkit-animation-delay: -2.3802185516s;
+          animation-delay: -2.3802185516s;
+}
+.Snow-flake:nth-child(2) {
+  -webkit-animation-delay: -2.8830466062s;
+          animation-delay: -2.8830466062s;
+}
+.Snow-flake:nth-child(3) {
+  -webkit-animation-delay: -1.9847415221s;
+          animation-delay: -1.9847415221s;
+}
+.Snow-flake:nth-child(4) {
+  -webkit-animation-delay: -1.1669209476s;
+          animation-delay: -1.1669209476s;
+}
+.Snow-flake:nth-child(5) {
+  -webkit-animation-delay: -3.1788976105s;
+          animation-delay: -3.1788976105s;
+}
+.Snow-flake:nth-child(6) {
+  -webkit-animation-delay: -1.848552091s;
+          animation-delay: -1.848552091s;
+}
+.Snow-flake:nth-child(7) {
+  -webkit-animation-delay: -0.4628432562s;
+          animation-delay: -0.4628432562s;
+}
+.Snow-flake:nth-child(8) {
+  -webkit-animation-delay: -3.7346919083s;
+          animation-delay: -3.7346919083s;
+}
+.Snow-flake:nth-child(9) {
+  -webkit-animation-delay: -0.7669193695s;
+          animation-delay: -0.7669193695s;
+}
+.Snow-flake:nth-child(10) {
+  -webkit-animation-delay: -0.8662272706s;
+          animation-delay: -0.8662272706s;
+}
+.Snow-flake:nth-child(11) {
+  -webkit-animation-delay: -2.2156588623s;
+          animation-delay: -2.2156588623s;
+}
+.Snow-flake:nth-child(12) {
+  -webkit-animation-delay: -2.9456940192s;
+          animation-delay: -2.9456940192s;
+}
+.Snow-flake:nth-child(13) {
+  -webkit-animation-delay: -2.3358082617s;
+          animation-delay: -2.3358082617s;
+}
+.Snow-flake:nth-child(14) {
+  -webkit-animation-delay: -0.059527954s;
+          animation-delay: -0.059527954s;
+}
+.Snow-flake:nth-child(15) {
+  -webkit-animation-delay: -1.5954216328s;
+          animation-delay: -1.5954216328s;
+}
+.Snow-flake:nth-child(16) {
+  -webkit-animation-delay: -2.4405060926s;
+          animation-delay: -2.4405060926s;
+}
+.Snow-flake:nth-child(17) {
+  -webkit-animation-delay: -2.6332346964s;
+          animation-delay: -2.6332346964s;
+}
+.Snow-flake:nth-child(18) {
+  -webkit-animation-delay: -2.231127969s;
+          animation-delay: -2.231127969s;
+}
+.Snow-flake:nth-child(19) {
+  -webkit-animation-delay: -0.7707887584s;
+          animation-delay: -0.7707887584s;
+}
+.Snow-flake:nth-child(20) {
+  -webkit-animation-delay: -0.2334118968s;
+          animation-delay: -0.2334118968s;
+}
+.Snow-flake:nth-child(21) {
+  -webkit-animation-delay: -1.3585515178s;
+          animation-delay: -1.3585515178s;
+}
+.Snow-flake:nth-child(22) {
+  -webkit-animation-delay: -0.4378711054s;
+          animation-delay: -0.4378711054s;
+}
+.Snow-flake:nth-child(23) {
+  -webkit-animation-delay: -0.327756818s;
+          animation-delay: -0.327756818s;
+}
+.Snow-flake:nth-child(24) {
+  -webkit-animation-delay: -2.6067354971s;
+          animation-delay: -2.6067354971s;
+}
+.Snow-flake:nth-child(25) {
+  -webkit-animation-delay: -3.0044281114s;
+          animation-delay: -3.0044281114s;
+}
+.Snow-flake:nth-child(26) {
+  -webkit-animation-delay: -3.6424503481s;
+          animation-delay: -3.6424503481s;
+}
+.Snow-flake:nth-child(27) {
+  -webkit-animation-delay: -2.9318487943s;
+          animation-delay: -2.9318487943s;
+}
+.Snow-flake:nth-child(28) {
+  -webkit-animation-delay: -0.6165761233s;
+          animation-delay: -0.6165761233s;
+}
+.Snow-flake:nth-child(29) {
+  -webkit-animation-delay: -0.2500407306s;
+          animation-delay: -0.2500407306s;
+}
+.Snow-flake:nth-child(30) {
+  -webkit-animation-delay: -3.1823906648s;
+          animation-delay: -3.1823906648s;
+}
+.Snow-flake:nth-child(31) {
+  -webkit-animation-delay: -2.6960213777s;
+          animation-delay: -2.6960213777s;
+}
+.Snow-flake:nth-child(32) {
+  -webkit-animation-delay: -2.2022738593s;
+          animation-delay: -2.2022738593s;
+}
+.Snow-flake:nth-child(33) {
+  -webkit-animation-delay: -1.1461204683s;
+          animation-delay: -1.1461204683s;
+}
+.Snow-flake:nth-child(34) {
+  -webkit-animation-delay: -0.9677801641s;
+          animation-delay: -0.9677801641s;
+}
+.Snow-flake:nth-child(35) {
+  -webkit-animation-delay: -0.0896100681s;
+          animation-delay: -0.0896100681s;
+}
+.Snow-flake:nth-child(36) {
+  -webkit-animation-delay: -0.6698194095s;
+          animation-delay: -0.6698194095s;
+}
+.Snow-flake:nth-child(37) {
+  -webkit-animation-delay: -3.4950068238s;
+          animation-delay: -3.4950068238s;
+}
+.Snow-flake:nth-child(38) {
+  -webkit-animation-delay: -2.3644701612s;
+          animation-delay: -2.3644701612s;
+}
+.Snow-flake:nth-child(39) {
+  -webkit-animation-delay: -1.3142071035s;
+          animation-delay: -1.3142071035s;
+}
+.Snow-flake:nth-child(40) {
+  -webkit-animation-delay: -0.2204621077s;
+          animation-delay: -0.2204621077s;
+}
+.Snow-flake:nth-child(41) {
+  -webkit-animation-delay: -1.3784957408s;
+          animation-delay: -1.3784957408s;
+}
+.Snow-flake:nth-child(42) {
+  -webkit-animation-delay: -0.7002760964s;
+          animation-delay: -0.7002760964s;
+}
+.Snow-flake:nth-child(43) {
+  -webkit-animation-delay: -1.5410034542s;
+          animation-delay: -1.5410034542s;
+}
+.Snow-flake:nth-child(44) {
+  -webkit-animation-delay: -0.5866449449s;
+          animation-delay: -0.5866449449s;
+}
+.Snow-flake:nth-child(45) {
+  -webkit-animation-delay: -0.6294971159s;
+          animation-delay: -0.6294971159s;
+}
+.Snow-flake:nth-child(46) {
+  -webkit-animation-delay: -2.6304946919s;
+          animation-delay: -2.6304946919s;
+}
+.Snow-flake:nth-child(47) {
+  -webkit-animation-delay: -0.2362120944s;
+          animation-delay: -0.2362120944s;
+}
+.Snow-flake:nth-child(48) {
+  -webkit-animation-delay: -0.2902225833s;
+          animation-delay: -0.2902225833s;
+}
+.Snow-flake:nth-child(49) {
+  -webkit-animation-delay: -3.4631446882s;
+          animation-delay: -3.4631446882s;
+}
+.Snow-flake:nth-child(50) {
+  -webkit-animation-delay: -3.8818778281s;
+          animation-delay: -3.8818778281s;
+}
+.Snow-flake:nth-child(51) {
+  -webkit-animation-delay: -0.268128072s;
+          animation-delay: -0.268128072s;
+}
+.Snow-flake:nth-child(52) {
+  -webkit-animation-delay: -3.0066510155s;
+          animation-delay: -3.0066510155s;
+}
+.Snow-flake:nth-child(53) {
+  -webkit-animation-delay: -1.2925148132s;
+          animation-delay: -1.2925148132s;
+}
+.Snow-flake:nth-child(54) {
+  -webkit-animation-delay: -3.2908473479s;
+          animation-delay: -3.2908473479s;
+}
+.Snow-flake:nth-child(55) {
+  -webkit-animation-delay: -2.8181362083s;
+          animation-delay: -2.8181362083s;
+}
+
+.Love {
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  height: 44px;
+  width: 100%;
+  left: 0;
+  color: #a32300;
+}
+.Love-heart, .Love-text {
+  display: inline-block;
+  font-family: sans-serif;
+  line-height: 44px;
+}

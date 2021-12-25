@@ -1,0 +1,600 @@
+@import url("https://fonts.googleapis.com/css?family=Vollkorn+SC:400,700&subset=latin-ext");
+* {
+  box-sizing: border-box;
+  font-family: "Vollkorn SC", serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  min-height: 650px;
+  min-width: 600px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+  height: 640px;
+  min-height: 640px;
+  width: 600px;
+  min-width: 600px;
+  border-radius: 3px;
+  margin: 0 auto;
+  background-color: #0c1c2b;
+  background: linear-gradient(#060f17 0%, #0c1c2b 30%, #263d52 90%, #375169 100%);
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: no shrink;
+}
+
+.moon {
+  transform: rotate(260deg);
+  background-color: #FFFCE6;
+  background: url("https://i.pinimg.com/736x/d8/6b/da/d86bda4ebc2e5dda5c3b1fd6de2e181c--moon-child-half-moons.jpg");
+  background-size: 155%;
+  background-position: 50% 50%;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  left: 350px;
+  top: -50px;
+  box-shadow: 0 0 58px rgba(255, 255, 255, 0.6);
+}
+
+.cloud, .cloud2 {
+  -webkit-animation: cloud 40s infinite linear;
+          animation: cloud 40s infinite linear;
+  z-index: 16;
+  height: 100px;
+  width: 260px;
+  position: relative;
+  top: -200px;
+  left: -230px;
+  background: url("https://www.reclay-group.com/at/images/header/stage_cloud_2.png");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cloud2 {
+  left: -350px;
+  -webkit-animation: cloud 45s infinite linear;
+          animation: cloud 45s infinite linear;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  background: url("http://www.pngpix.com/wp-content/uploads/2016/10/PNGPIX-COM-Cloud-PNG-Transparent-Image-1.png");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -266px;
+}
+
+.top {
+  align-self: flex-start;
+  height: 390px;
+  width: 600px;
+}
+.top .snow-flake {
+  opacity: 0;
+  position: relative;
+  top: -500px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 3;
+}
+.top .sf-1 {
+  -webkit-animation: fall 15s linear infinite;
+          animation: fall 15s linear infinite;
+  width: 10px;
+  height: 10px;
+  left: 30px;
+}
+.top .sf-2 {
+  -webkit-animation: fall 18s linear infinite;
+          animation: fall 18s linear infinite;
+  width: 5px;
+  height: 5px;
+  left: 90px;
+}
+.top .sf-3 {
+  -webkit-animation: fall2 19s linear infinite;
+          animation: fall2 19s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  width: 4px;
+  height: 4px;
+  left: 120px;
+}
+.top .sf-4 {
+  -webkit-animation: fall 17s linear infinite;
+          animation: fall 17s linear infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  width: 11px;
+  height: 11px;
+  left: 180px;
+}
+.top .sf-5 {
+  -webkit-animation: fall 12s linear infinite;
+          animation: fall 12s linear infinite;
+  width: 7px;
+  height: 7px;
+  left: 220px;
+}
+.top .sf-6 {
+  -webkit-animation: fall2 17s linear infinite;
+          animation: fall2 17s linear infinite;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+  width: 6px;
+  height: 6px;
+  left: 270px;
+}
+.top .sf-7 {
+  -webkit-animation: fall 9s linear infinite;
+          animation: fall 9s linear infinite;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+  width: 14px;
+  height: 14px;
+  left: 370px;
+}
+.top .sf-8 {
+  -webkit-animation: fall2 16s linear infinite;
+          animation: fall2 16s linear infinite;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  width: 9px;
+  height: 9px;
+  left: 450px;
+}
+.top .sf-9 {
+  -webkit-animation: fall 10s linear infinite;
+          animation: fall 10s linear infinite;
+  width: 5px;
+  height: 5px;
+  left: 550px;
+  top: -100px;
+}
+.top .sf-10 {
+  -webkit-animation: fall2 17s linear infinite;
+          animation: fall2 17s linear infinite;
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+  width: 5px;
+  height: 5px;
+  left: 250px;
+}
+.top .sf-11 {
+  -webkit-animation: fall3 19s linear infinite;
+          animation: fall3 19s linear infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  width: 6px;
+  height: 6px;
+  left: 50px;
+}
+.top .sf-12 {
+  -webkit-animation: fall2 13s linear infinite;
+          animation: fall2 13s linear infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  width: 12px;
+  height: 12px;
+  left: 330px;
+}
+.top .sf-13 {
+  -webkit-animation: fall3 21s linear infinite;
+          animation: fall3 21s linear infinite;
+  width: 3px;
+  height: 3px;
+  left: 100px;
+}
+.top .sf-14 {
+  -webkit-animation: fall 17s linear infinite;
+          animation: fall 17s linear infinite;
+  width: 5px;
+  height: 5px;
+  left: 580px;
+}
+.top .sf-15 {
+  -webkit-animation: fall 19s linear infinite;
+          animation: fall 19s linear infinite;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  width: 5px;
+  height: 5px;
+  left: 500px;
+}
+.top .sf-16 {
+  -webkit-animation: fall 17s linear infinite;
+          animation: fall 17s linear infinite;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  width: 8px;
+  height: 8px;
+  left: 100px;
+}
+.top .sf-17 {
+  -webkit-animation: fall 22s linear infinite;
+          animation: fall 22s linear infinite;
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+  width: 2px;
+  height: 2px;
+  left: 170px;
+}
+.top .sf-18 {
+  -webkit-animation: fall 15s linear infinite;
+          animation: fall 15s linear infinite;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  width: 9px;
+  height: 9px;
+  left: 255px;
+}
+.top .sf-19 {
+  -webkit-animation: fall 16s linear infinite;
+          animation: fall 16s linear infinite;
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+  width: 6px;
+  height: 6px;
+  left: 380px;
+}
+.top .sf-20 {
+  -webkit-animation: fall 18s linear infinite;
+          animation: fall 18s linear infinite;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  width: 4px;
+  height: 4px;
+  left: 470px;
+}
+
+.snow-wrap {
+  background: transparent;
+  height: 250px;
+  width: 600px;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+}
+.snow-wrap .snow {
+  z-index: 3;
+  border-top: 8px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  background-color: #fff;
+  float: left;
+  border-radius: 50%;
+}
+.snow-wrap .snow-1 {
+  bottom: -70px;
+  left: -50px;
+  height: 220px;
+  width: 220px;
+  z-index: 4;
+  transform: rotate(-20deg);
+}
+.snow-wrap .snow-2 {
+  height: 230px;
+  width: 240px;
+  position: absolute;
+  left: 120px;
+  bottom: -30px;
+  transform: rotate(-20deg);
+}
+.snow-wrap .snow-3 {
+  height: 230px;
+  width: 240px;
+  position: absolute;
+  left: 230px;
+  bottom: -50px;
+  transform: rotate(30deg);
+}
+.snow-wrap .snow-4 {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  left: 380px;
+  bottom: -50px;
+  transform: rotate(45deg);
+}
+.snow-wrap .snow-5 {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  left: 520px;
+  bottom: -10px;
+}
+
+.santa {
+  height: 50px;
+  width: 200px;
+  background: url("http://www.pngmart.com/files/3/Sleigh-Transparent-Background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: 2;
+  position: relative;
+  top: -400px;
+  left: -700px;
+  transform: rotate(-15deg);
+  -webkit-animation: santa 15s infinite linear;
+          animation: santa 15s infinite linear;
+}
+
+.tree {
+  background: url("http://moziru.com/images/drawn-snowfall-christmas-tree-20.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 40px;
+  z-index: 3;
+  position: relative;
+}
+
+.tree1 {
+  top: -110px;
+  left: -300px;
+}
+
+.tree2 {
+  top: -100px;
+  left: -400px;
+}
+
+.tree3 {
+  top: -80px;
+  left: -220px;
+}
+
+.tree4 {
+  left: -10px;
+  top: -100px;
+}
+
+.treev2 {
+  background: url("https://www.tenstickers-ireland.com/wall-stickers/img/preview/snow-christmas-tree-stickers-1265.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 40px;
+  z-index: 3;
+  position: relative;
+}
+
+.tree5 {
+  left: -150px;
+  top: -20px;
+}
+
+.tree6 {
+  left: -230px;
+  top: -110px;
+}
+
+.tree7 {
+  left: -450px;
+}
+
+.tree8 {
+  top: -30px;
+}
+
+.hut {
+  background: url("http://moziru.com/images/hut-clipart-brown-house-3.png");
+  z-index: 4;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 110px;
+  position: relative;
+  left: -180px;
+  top: -40px;
+}
+
+.wesolych {
+  -webkit-animation: wesolych 5s ease-in-out forwards;
+          animation: wesolych 5s ease-in-out forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  opacity: 0;
+  z-index: 5;
+  font-size: 56px;
+  color: #fff;
+  position: relative;
+  top: -450px;
+  text-align: center;
+  left: -50%;
+  transform: translateX(50%);
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+}
+.wesolych span {
+  opacity: 0;
+  font-size: 40px;
+  -webkit-animation: wesolych 5s ease-in-out forwards;
+          animation: wesolych 5s ease-in-out forwards;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.logo {
+  -webkit-animation: wesolych 5s ease-in-out forwards;
+          animation: wesolych 5s ease-in-out forwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  opacity: 0;
+  background: url("https://www.macmillan.pl/images/wsip_logo.png");
+  z-index: 5;
+  height: 80px;
+  width: 78px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 200%;
+  position: relative;
+  left: 50%;
+  top: -480px;
+  transform: translateX(-50%);
+}
+
+@-webkit-keyframes fall {
+  0% {
+    opacity: 1;
+    top: -450px;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+    top: 130px;
+  }
+}
+
+@keyframes fall {
+  0% {
+    opacity: 1;
+    top: -450px;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+    top: 130px;
+  }
+}
+@-webkit-keyframes fall2 {
+  0% {
+    opacity: 1;
+    top: -480px;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+    top: 130px;
+  }
+}
+@keyframes fall2 {
+  0% {
+    opacity: 1;
+    top: -480px;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+    top: 130px;
+  }
+}
+@-webkit-keyframes fall3 {
+  0% {
+    opacity: 1;
+    top: -500px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+    top: 130px;
+  }
+}
+@keyframes fall3 {
+  0% {
+    opacity: 1;
+    top: -500px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+    top: 130px;
+  }
+}
+@-webkit-keyframes cloud {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(800px);
+  }
+}
+@keyframes cloud {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(800px);
+  }
+}
+@-webkit-keyframes santa {
+  0% {
+    top: -450px;
+    left: -700px;
+    transform: rotate(-15deg);
+  }
+  50% {
+    top: -510px;
+    transform: rotate(0deg);
+  }
+  70% {
+    top: -520px;
+  }
+  100% {
+    left: 400px;
+    top: -525px;
+    transform: rotate(5deg);
+  }
+}
+@keyframes santa {
+  0% {
+    top: -450px;
+    left: -700px;
+    transform: rotate(-15deg);
+  }
+  50% {
+    top: -510px;
+    transform: rotate(0deg);
+  }
+  70% {
+    top: -520px;
+  }
+  100% {
+    left: 400px;
+    top: -525px;
+    transform: rotate(5deg);
+  }
+}
+@-webkit-keyframes wesolych {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes wesolych {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

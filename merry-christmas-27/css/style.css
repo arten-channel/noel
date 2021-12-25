@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+.🎄 {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-areas: ". . . . . . ........ l1  ....... . . . . . ."". . . . . . ........ l1  ....... . . . . . ."". . . . . ....... l2 l2 l2 ....... . . . . ."". . . . . ....... l2 l2 l2 ....... . . . . ."". . . . ...... l3 l3 l3 l3 l3 ...... . . . ."". . . . ...... l3 l3 l3 l3 l3 ...... . . . ."". . . ..... l4 l4 l4 l4 l4 l4 l4 ..... . . ."". . . ..... l4 l4 l4 l4 l4 l4 l4 ..... . . ."". . .... l5 l5 l5 l5 l5 l5 l5 l5 l5 .... . ."". . .... l5 l5 l5 l5 l5 l5 l5 l5 l5 .... . ."". ... l6 l6 l6 l6 l6 l6 l6 l6 l6 l6 l6 ... ."". ... l6 l6 l6 l6 l6 l6 l6 l6 l6 l6 l6 ... ."".. l7 l7 l7 l7 l7 l7 l7 l7 l7 l7 l7 l7 l7 .."".. l7 l7 l7 l7 l7 l7 l7 l7 l7 l7 l7 l7 l7 ..""l8 l8 l8 l8 l8 l8 l8 l8 l8 l8 l8 l8 l8 l8 l8""l8 l8 l8 l8 l8 l8 l8 l8 l8 l8 l8 l8 l8 l8 l8"". . . . . ....... l9 l9 l9 ....... . . . . ."". . . . . ....... l9 l9 l9 ....... . . . . ."". . . . . ....... l9 l9 l9 ....... . . . . .";
+  grid-auto-rows: 20px;
+  grid-gap: 2px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.🍃 {
+  --Green: #8FD694;
+  --Greener: #7DBA84;
+  --Wood: #894E35;
+  border-radius: 5px;
+  background-color: var(--Green);
+}
+
+.🍃:first-child {
+  background: linear-gradient(to top right, #A5932C, #F9E570);
+}
+
+.🍃:last-child {
+  background-color: var(--Wood);
+}
+
+.🍃:nth-child(even) {
+  background-color: var(--Greener);
+}
+
+.🍃:nth-child(1) {
+  grid-area: l1;
+}
+
+.🍃:nth-child(2) {
+  grid-area: l2;
+}
+
+.🍃:nth-child(3) {
+  grid-area: l3;
+}
+
+.🍃:nth-child(4) {
+  grid-area: l4;
+}
+
+.🍃:nth-child(5) {
+  grid-area: l5;
+}
+
+.🍃:nth-child(6) {
+  grid-area: l6;
+}
+
+.🍃:nth-child(7) {
+  grid-area: l7;
+}
+
+.🍃:nth-child(8) {
+  grid-area: l8;
+}
+
+.🍃:nth-child(9) {
+  grid-area: l9;
+}

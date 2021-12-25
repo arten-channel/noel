@@ -1,0 +1,399 @@
+body {
+	background-color: rgba(211, 47, 47, 0.65);
+	color: #fff;
+	text-align: center;
+}
+
+ul {
+    display: table;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0;
+}
+ ul li {
+    display: inline-block;
+    float: left;
+ }
+
+.santaclaus {
+    display: block;
+	margin: 0 auto;
+    max-width: 500px;
+}
+
+.santaclaus > div {
+	margin: 0 auto;
+	max-width: 400px;
+}
+
+.santaclaus .chapeu {
+    display: block;
+    position: relative;
+    width: 310px;
+    z-index: 99;
+}
+
+.santaclaus .chapeu .cone-1 {
+    border-left: 50px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 70px solid #D32F2F;
+}
+
+.santaclaus .chapeu .cone-2 {
+    background-color:  #D32F2F;
+    border-top: 0px solid transparent;
+    border-right: 340px solid #D32F2F;
+    border-bottom: 100px solid transparent;
+    border-color: transparent;
+    box-shadow: -25px 15px 30px -5px rgba(1,1,1,0.3);
+    position: relative;
+    left: -56px;
+    top: 49px;
+
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+
+    -webkit-border-radius: 30% 100% 0 100%;
+    -moz-border-radius: 30% 100% 0 100%;
+    border-radius: 30% 100% 0 100%;
+}
+
+.santaclaus .chapeu::after,
+.santaclaus .chapeu::before {
+	background-color: #fff;
+	content: " ";
+	display: block;
+}
+
+.santaclaus .chapeu::after {
+	box-shadow: 0px -15px 40px -5px rgba(1,1,1,0.4);
+    height: 80px;
+    margin-left: -15px;
+    position: relative;
+    width: 340px;
+
+    -webkit-border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    border-radius: 0.8em;
+}
+
+.santaclaus .chapeu::before {
+	box-shadow: 20px 20px 40px -5px rgba(1,1,1,0.3);
+    height: 80px;
+    left: -120px;
+    position: absolute;
+    top: 80px;
+    width: 80px;
+    z-index: 111;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.santaclaus .face {
+    background-color: #ffccbc;
+    box-shadow: 0px 0px 30px 5px rgba(1,1,1,0.3);
+    content: " ";
+    display: block;
+    height: 130px;
+    position: relative;
+    top: -10px;
+    width: 300px;
+}
+
+.santaclaus > .orelhas {
+    background-color: #eea2ad;
+    box-shadow: 0px 0px 30px 5px rgba(1,1,1,0.3);
+    display: block;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    top: -125px;
+    width: 330px;
+    z-index: -1;
+
+    -webkit-border-radius: 1em 1em 2em 2em;
+    -moz-border-radius: 1em 1em 2em 2em;
+    border-radius: 1em 1em 2em 2em;
+}
+
+.santaclaus .face > .eyes {
+	display: inline-block;
+	height: 0px;
+	margin: 20px auto 0;
+	max-width: 160px;
+	width: 100%;
+}
+
+.santaclaus .face > .eyes::before,
+.santaclaus .face > .eyes::after {
+	background-color: #111;
+	content: " ";
+	display: inline-block;
+	float: left;
+	height: 20px;
+	width: 20px;
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.santaclaus .face > .eyes::after {
+	float: right;
+}
+
+.santaclaus .face > .nariz {
+	background-color: #EEA2AD;
+	height: 50px;
+	margin: 0 auto;
+	position: relative;
+	width: 70px;
+	z-index: 111;
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.santaclaus .face > .barba {
+    background-color: #ecf0f1;
+    box-shadow: -10px 10px 10px -5px rgba(1,1,1,0.3);
+    height: 240px;
+    margin: 0 auto;
+    position: relative;
+    top: -30px;
+    width: 340px;
+    left: -20px;
+
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+
+    -webkit-border-radius: 0% 100% 70% 100%;
+    -moz-border-radius: 0% 100% 70% 100%;
+    border-radius: 0% 100% 70% 100%;
+
+    -webkit-animation: animaBarba 1.6s ease-in-out infinite alternate;
+    -moz-animation: animaBarba 1.6s ease-in-out infinite alternate;
+    animation: animaBarba 1.6s ease-in-out infinite alternate;
+}
+
+.santaclaus .face > .barba > .boca {
+    height: 50px;
+    left: 30px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    width: 60px;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-animation: hoho 1.6s ease-in-out infinite alternate;
+    -moz-animation: hoho 1.6s ease-in-out infinite alternate;
+    animation: hoho 1.6s ease-in-out infinite alternate;
+}
+
+.hohoho {
+    height: 0;
+    padding-top: 200px;
+    width: 150px;
+
+    -webkit-animation: txtHohoho 1.6s ease-in-out infinite alternate;
+    -moz-animation: txtHohoho 1.6s ease-in-out infinite alternate;
+    animation: txtHohoho 1.6s ease-in-out infinite alternate;
+}
+
+.hohoho h2::before {
+	text-shadow: 0px 10px 20px rgba(1,1,1,0.4);
+	color: #fff;
+	content: "HO";
+    font-size: 62px;
+    line-height: 1.4em;
+}
+
+/*Texto Hohoho do lado direito*/
+.hohoho:last-of-type h2 {
+    margin: 0 10px 30px;
+    text-align: right;
+}
+
+.hohoho:last-of-type h2:nth-child(2) {margin-right: -50px;}
+.hohoho:last-of-type h2:first-child,
+.hohoho:last-of-type h2:last-child {
+	-webkit-animation: txtHohohoRight 1.6s ease-in-out infinite alternate;
+	-moz-animation: txtHohohoRight 1.6s ease-in-out infinite alternate;
+	animation: txtHohohoRight 1.6s ease-in-out infinite alternate;
+}
+
+/*Texto Hohoho do lado esquerdo*/
+.hohoho:first-of-type h2 {
+    margin: 0 50px 30px 0;
+    text-align: left;
+}
+
+.hohoho:first-of-type h2:nth-child(2) {margin-left: -60px;}
+.hohoho:first-of-type h2:first-child,
+.hohoho:first-of-type h2:last-child {
+	-webkit-animation: txtHohohoLeft 1.6s ease-in-out infinite alternate;
+	-moz-animation: txtHohohoLeft 1.6s ease-in-out infinite alternate;
+	animation: txtHohohoLeft 1.6s ease-in-out infinite alternate;
+}
+
+/*Texto Ho do meio em ambos os lados*/
+.hohoho h2:nth-child(2) {
+	-webkit-animation: txtHohohoMiddle 1.6s ease-in-out infinite alternate;
+	-moz-animation: txtHohohoMiddle 1.6s ease-in-out infinite alternate;
+	animation: txtHohohoMiddle 1.6s ease-in-out infinite alternate;
+}
+
+/**************
+** Animações **
+***************/
+
+/*FadeIn e fadeOut para textos Hohoho*/
+@keyframes txtHohoho {
+	from {opacity: .2}
+	to {opacity: 1}
+}
+
+/*Texto Ho do meio em ambos os lados*/
+@-webkit-keyframes txtHohohoMiddle {
+	from {-webkit-transform: scale(1.5);}
+	to {-webkit-transform: scale(1);}
+}
+@-moz-keyframes txtHohohoMiddle {
+	from {-moz-transform: scale(1.5);}
+	to {-moz-transform: scale(1);}
+}
+@keyframes txtHohohoMiddle {
+	from {transform: scale(1.5);}
+	to {transform: scale(1);}
+}
+
+/*Hohoho do lado esquerdo*/
+@-webkit-keyframes txtHohohoLeft {
+	to {-webkit-transform: scale(1.5);}
+}
+@-moz-keyframes txtHohohoLeft {
+	to {-moz-transform: scale(1.5);}
+}
+@keyframes txtHohohoLeft {
+	to {transform: scale(1.5);}
+}
+
+/*Hohoho do lado direito*/
+@-webkit-keyframes txtHohohoRight {
+	to {-webkit-transform: scale(1.5);}
+}
+@-moz-keyframes txtHohohoRight {
+	to {-moz-transform: scale(1.5);}
+}
+@keyframes txtHohohoRight {
+	to {transform: scale(1.5);}
+}
+
+/*Movimenta barba*/
+@-webkit-keyframes animaBarba {
+	to {-webkit-transform: rotate(-10deg);}
+}
+@-moz-keyframes animaBarba {
+	to {-moz-transform: rotate(-10deg);}
+}
+@keyframes animaBarba {
+	to {transform: rotate(-10deg);}
+}
+
+/*Hoho no movimento da boca*/
+@-webkit-keyframes hoho {
+	0% {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 20px 0 0 #111;
+			height: 40px;
+    	width: 60px;
+	}
+
+	60%  {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 60px 0 0 #111;
+			height: 60px;
+    	width: 30px;
+	}
+
+	80%  {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 60px 0 0 #111;
+			height: 50px;
+    	width: 40px;
+	}
+
+	100%  {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 60px 0 0 #111;
+			height: 60px;
+    	width: 30px;
+	}
+}
+@-moz-keyframes hoho {
+	0% {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 20px 0 0 #111;
+			height: 40px;
+    	width: 60px;
+	}
+
+	60%  {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 60px 0 0 #111;
+			height: 60px;
+    	width: 30px;
+	}
+
+	80%  {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 60px 0 0 #111;
+			height: 50px;
+    	width: 40px;
+	}
+
+	100%  {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 60px 0 0 #111;
+			height: 60px;
+    	width: 30px;
+	}
+}
+@keyframes hoho {
+	0% {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 20px 0 0 #111;
+			height: 40px;
+    	width: 60px;
+	}
+
+	60%  {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 60px 0 0 #111;
+			height: 60px;
+    	width: 30px;
+	}
+
+	80%  {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 60px 0 0 #111;
+			height: 50px;
+    	width: 40px;
+	}
+
+	100%  {
+    	background-color: #ecf0f1;
+    	box-shadow: 0px 60px 0 0 #111;
+			height: 60px;
+    	width: 30px;
+	}
+}

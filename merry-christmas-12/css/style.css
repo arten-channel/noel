@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css?family=Berkshire+Swash);
+
+@keyframes hover {
+  0% {
+    transform: translate3d(0, 0, 0);
+    color: #b81313;
+  }
+
+  50% {
+    transform: translate3d(0, -0.2em, 0);
+    color: #db3e3e;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    color: #b81313;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 0.3em rgba(255, 255, 255, 0.8);
+  }
+
+  50% {
+    box-shadow: 0px 0px 0.3em rgba(255, 255, 255, 0.4);
+  }
+
+  100% {
+    box-shadow: 0px 0px 0.3em rgba(255, 255, 255, 0.8);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 200%;
+  padding: 2em;
+  background: linear-gradient(#c9e1e0, #fff) no-repeat;
+}
+
+.headline {
+  margin-bottom: 0.5em;
+  color: #b81313;
+  font-family: "Berkshire Swash", cursive;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 0 0.05em 0.1em #fff;
+  animation-name: hover;
+  animation-iteration-count: infinite;
+  animation-duration: 3.5s;
+}
+
+.fir {
+  position: relative;
+  margin: 0 auto;
+  width: 8em;
+}
+
+.fir__item {
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 2.3em solid transparent;
+  border-right: 2.3em solid transparent;
+  border-bottom: 3em solid #16850c;
+}
+
+.fir__item:nth-child(2) {
+  margin-top: -1.3em;
+  border-left-width: 3em;
+  border-right-width: 3em;
+  border-bottom-width: 4em;
+}
+
+.fir__item:nth-child(3) {
+  margin-top: -1.7em;
+  border-left-width: 4em;
+  border-right-width: 4em;
+  border-bottom-width: 5em;
+}
+
+.fir__log {
+  margin: 0 auto;
+  width: 1.3em;
+  height: 1.3em;
+  background: #8c370f;
+  background: linear-gradient(#8c370f, #5c240a);
+}
+
+.orbs {
+  position: absolute;
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0.3em rgba(255, 255, 255, 0.8);
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-duration: 2.5s;
+}
+
+.orbs:before, .orbs:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0.3em rgba(255, 255, 255, 0.8);
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-duration: 2.5s;
+}
+
+.orbs-1 {
+  top: 1.2em;
+  left: 3.2em;
+  background: #ed0000;
+  background: radial-gradient(circle, #f77373, #ed0000);
+}
+
+.orbs-1:before {
+  top: 2.4em;
+  left: 1.5em;
+  width: 0.6em;
+  height: 0.6em;
+  background: #ed0000;
+  background: radial-gradient(circle, #f77373, #ed0000);
+}
+
+.orbs-1:after {
+  top: 0.7em;
+  left: 1em;
+  width: 0.8em;
+  height: 0.8em;
+  background: #e7c400;
+  background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+
+.orbs-2 {
+  top: 3.4em;
+  left: 2.9em;
+  background: #e7c400;
+  background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+
+.orbs-2:before {
+  top: 2.4em;
+  left: 1.5em;
+  width: 0.6em;
+  height: 0.6em;
+  background: #e7c400;
+  background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+
+.orbs-2:after {
+  top: 1.2em;
+  left: 0.5em;
+  width: 0.8em;
+  height: 0.8em;
+  background: #ed0000;
+  background: radial-gradient(circle, #f77373, #ed0000);
+}
+
+.orbs-3 {
+  top: 6.4em;
+  left: 2.2em;
+  background: #e7c400;
+  background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+
+.orbs-3:before {
+  top: 1.4em;
+  left: 3.5em;
+  width: 0.6em;
+  height: 0.6em;
+  background: #e7c400;
+  background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+
+.orbs-3:after {
+  top: 0.9em;
+  left: 1.4em;
+  width: 0.8em;
+  height: 0.8em;
+  background: #ed0000;
+  background: radial-gradient(circle, #f77373, #ed0000);
+}
+
+.orbs-4 {
+  top: 7.9em;
+  left: 1.7em;
+  background: #ed0000;
+  background: radial-gradient(circle, #f77373, #ed0000);
+}

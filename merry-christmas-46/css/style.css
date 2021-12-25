@@ -1,0 +1,82 @@
+h1 {
+  display: inline-block;
+  border-bottom: 4px solid #fff;
+  color: #fff;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 10px;
+}
+
+body, html {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  color: #fff;
+  text-align: center;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: #222;
+}
+
+.present {
+  width: 100px;
+  height: 100px;
+  background: #c0392b;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.present-2 {
+  width: 200px;
+  height: 200px;
+  z-index: 9;
+  left: 30px;
+}
+
+.ribbon {
+  background: #d65548;
+  height: 20%;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ribbon:after {
+  content: "";
+  background: inherit;
+  width: 20%;
+  height: 500%;
+  position: absolute;
+  left: 40%;
+  top: -200%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.present:before, .present:after {
+  content: "";
+  height: 30%;
+  width: 30%;
+  top: -30%;
+  left: 20%;
+  position: absolute;
+  background: #d65548;
+  border-radius: 50%;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.present:after {
+  right: 20%;
+  left: auto;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 50%;
+}

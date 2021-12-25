@@ -1,0 +1,54 @@
+body {
+  background: url(../images/hand-drawn-winter-landscape_23-2148724561.jpg) !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  font-family: "Brush Script MT", cursive;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%);
+  color: white;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 1.7%;
+  font-size: 16px;
+}
+
+.footer a {
+  color: white;
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+  animation-delay: 500ms;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+.typing {
+  display: flex;
+  margin-top: 10%;
+}
+
+.header-sub-title,
+h2 {
+  font-weight: 600;
+  font-size: 40px;
+  color: #ff6b6b;
+  padding-right: 0.1em;
+  text-transform: uppercase;
+}

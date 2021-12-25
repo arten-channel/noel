@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  background-image: url("../images/Merry-Christmas-pictures-free.jpg");
+  background-color: #111;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.snow {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.snow__item {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  will-change: box-shadow;
+  -webkit-animation: snow 10000ms linear infinite;
+          animation: snow 10000ms linear infinite;
+}
+.snow__item:nth-child(2) {
+  left: 25vw;
+  -webkit-animation-delay: 6666ms;
+          animation-delay: 6666ms;
+}
+.snow__item:nth-child(3) {
+  right: 25vw;
+  -webkit-animation-delay: 3333ms;
+          animation-delay: 3333ms;
+}
+@-webkit-keyframes snow {
+  0% {
+    box-shadow: 0 0 0 transparent, 58vw -102vh 1px 1px #3c6b69, -53vw -144vh 8px 2px #e8e63a, 92vw -101vh 2px 1px #c3ba38, -17vw -126vh 4px 4px #37a47d, 9vw -146vh 1px 4px #0fd9f4, -21vw -105vh 7px 1px #212f1c, 100vw -124vh 1px 4px #7c3c76, -56vw -81vh 5px 3px #1b7a37, 62vw -97vh 5px 1px #a5a909, -83vw -51vh 6px 1px #61bf81, 33vw -149vh 7px 5px #f2ffb8, -19vw -134vh 7px 5px #af4159, 47vw -84vh 2px 3px #681cb3, -45vw -76vh 7px 1px #4abda4, 55vw -60vh 8px 1px #bee2f9, -54vw -149vh 1px 1px #ad654f, 6vw -55vh 6px 4px #6e1a32, -73vw -82vh 2px 4px #75ccca, 55vw -83vh 3px 1px #4c2226, -72vw -82vh 3px 2px #03eb05, 83vw -125vh 1px 3px #c40f12, -77vw -121vh 1px 2px #104d05, 26vw -52vh 4px 5px #f2aea4, -54vw -104vh 8px 3px #abdc05, 26vw -132vh 6px 1px #1a8147, -77vw -115vh 7px 2px #c7a852, 24vw -88vh 1px 3px #c112d2, -75vw -107vh 4px 1px #9ddbdb, 10vw -145vh 7px 3px #f6f512, -13vw -129vh 5px 3px #ff1245, 88vw -90vh 1px 1px #5566dc, -37vw -51vh 3px 4px #bb2e6f, 7vw -117vh 3px 5px #71d592, -4vw -72vh 5px 5px #f35635, 61vw -88vh 3px 5px #ae83ca, -16vw -131vh 4px 4px #b0f4c9, 84vw -93vh 6px 2px #81195b, -57vw -78vh 2px 5px #0f5bfb, 76vw -54vh 7px 2px #1b4d82, -71vw -137vh 3px 2px #842dcf, 53vw -93vh 1px 3px #b95569, -38vw -145vh 3px 1px #a68204, 20vw -61vh 2px 2px #33abb1, -10vw -99vh 2px 2px #7751c1, 84vw -56vh 8px 2px #6aa730, -83vw -88vh 7px 3px #c8a941, 60vw -58vh 6px 1px #e7d622, -32vw -88vh 2px 1px #63f775, 81vw -54vh 3px 3px #6219f1, -2vw -117vh 4px 4px #04fe4a;
+  }
+  100% {
+    box-shadow: 0 0 0 transparent, 93vw 124vh 4px 1px #975fc7, -28vw 57vh 1px 5px #fa3054, 81vw 130vh 5px 4px #c6a2fc, -3vw 80vh 3px 1px #bdec92, 32vw 67vh 5px 4px #dc5b58, -63vw 73vh 1px 1px #c2c272, 24vw 59vh 1px 3px #2ef301, -10vw 104vh 4px 1px #161aee, 48vw 101vh 7px 5px #acfd3d, -74vw 110vh 6px 5px #a361dd, 83vw 140vh 3px 2px #5e2450, -44vw 107vh 4px 1px #56b265, 84vw 66vh 3px 4px #8f4c0d, -70vw 127vh 5px 1px #2191dd, 92vw 104vh 2px 2px #a5f485, -73vw 70vh 7px 2px #742cb8, 38vw 111vh 2px 3px #941678, -67vw 87vh 2px 1px #f79cae, 81vw 141vh 6px 5px #65959c, -54vw 100vh 5px 5px #22e54a, 38vw 140vh 7px 5px #7658d3, -9vw 110vh 1px 4px #7e4e48, 38vw 80vh 1px 4px #930f57, -22vw 75vh 3px 4px #2687bd, 59vw 75vh 4px 2px #127c65, -36vw 73vh 4px 3px #d0719a, 74vw 116vh 3px 3px #3415be, -40vw 118vh 7px 5px #ef1176, 50vw 98vh 1px 5px #a2877c, -31vw 63vh 4px 4px #95cd79, 44vw 148vh 1px 1px #d6a939, -67vw 108vh 8px 4px #65bc77, 76vw 93vh 3px 4px #858d9f, -6vw 114vh 5px 1px #a357e9, 20vw 110vh 3px 1px #65e0bb, -32vw 111vh 4px 5px #99c416, 27vw 84vh 4px 5px #368252, -72vw 62vh 6px 1px #d17a8c, 92vw 61vh 2px 2px #c2ad28, -60vw 121vh 2px 1px #31f1a0, 71vw 101vh 7px 2px #943ba5, -91vw 141vh 4px 5px #724348, 67vw 99vh 3px 4px #cde6c2, -9vw 55vh 6px 5px #e2bfa3, 63vw 117vh 8px 4px #075ee5, -65vw 117vh 5px 4px #d73c48, 79vw 128vh 8px 4px #422876, -32vw 128vh 3px 1px #559169, 74vw 95vh 3px 1px #d47817, -12vw 66vh 5px 2px #8bb0e1;
+  }
+}
+@keyframes snow {
+  0% {
+    box-shadow: 0 0 0 transparent, 58vw -102vh 1px 1px #3c6b69, -53vw -144vh 8px 2px #e8e63a, 92vw -101vh 2px 1px #c3ba38, -17vw -126vh 4px 4px #37a47d, 9vw -146vh 1px 4px #0fd9f4, -21vw -105vh 7px 1px #212f1c, 100vw -124vh 1px 4px #7c3c76, -56vw -81vh 5px 3px #1b7a37, 62vw -97vh 5px 1px #a5a909, -83vw -51vh 6px 1px #61bf81, 33vw -149vh 7px 5px #f2ffb8, -19vw -134vh 7px 5px #af4159, 47vw -84vh 2px 3px #681cb3, -45vw -76vh 7px 1px #4abda4, 55vw -60vh 8px 1px #bee2f9, -54vw -149vh 1px 1px #ad654f, 6vw -55vh 6px 4px #6e1a32, -73vw -82vh 2px 4px #75ccca, 55vw -83vh 3px 1px #4c2226, -72vw -82vh 3px 2px #03eb05, 83vw -125vh 1px 3px #c40f12, -77vw -121vh 1px 2px #104d05, 26vw -52vh 4px 5px #f2aea4, -54vw -104vh 8px 3px #abdc05, 26vw -132vh 6px 1px #1a8147, -77vw -115vh 7px 2px #c7a852, 24vw -88vh 1px 3px #c112d2, -75vw -107vh 4px 1px #9ddbdb, 10vw -145vh 7px 3px #f6f512, -13vw -129vh 5px 3px #ff1245, 88vw -90vh 1px 1px #5566dc, -37vw -51vh 3px 4px #bb2e6f, 7vw -117vh 3px 5px #71d592, -4vw -72vh 5px 5px #f35635, 61vw -88vh 3px 5px #ae83ca, -16vw -131vh 4px 4px #b0f4c9, 84vw -93vh 6px 2px #81195b, -57vw -78vh 2px 5px #0f5bfb, 76vw -54vh 7px 2px #1b4d82, -71vw -137vh 3px 2px #842dcf, 53vw -93vh 1px 3px #b95569, -38vw -145vh 3px 1px #a68204, 20vw -61vh 2px 2px #33abb1, -10vw -99vh 2px 2px #7751c1, 84vw -56vh 8px 2px #6aa730, -83vw -88vh 7px 3px #c8a941, 60vw -58vh 6px 1px #e7d622, -32vw -88vh 2px 1px #63f775, 81vw -54vh 3px 3px #6219f1, -2vw -117vh 4px 4px #04fe4a;
+  }
+  100% {
+    box-shadow: 0 0 0 transparent, 93vw 124vh 4px 1px #975fc7, -28vw 57vh 1px 5px #fa3054, 81vw 130vh 5px 4px #c6a2fc, -3vw 80vh 3px 1px #bdec92, 32vw 67vh 5px 4px #dc5b58, -63vw 73vh 1px 1px #c2c272, 24vw 59vh 1px 3px #2ef301, -10vw 104vh 4px 1px #161aee, 48vw 101vh 7px 5px #acfd3d, -74vw 110vh 6px 5px #a361dd, 83vw 140vh 3px 2px #5e2450, -44vw 107vh 4px 1px #56b265, 84vw 66vh 3px 4px #8f4c0d, -70vw 127vh 5px 1px #2191dd, 92vw 104vh 2px 2px #a5f485, -73vw 70vh 7px 2px #742cb8, 38vw 111vh 2px 3px #941678, -67vw 87vh 2px 1px #f79cae, 81vw 141vh 6px 5px #65959c, -54vw 100vh 5px 5px #22e54a, 38vw 140vh 7px 5px #7658d3, -9vw 110vh 1px 4px #7e4e48, 38vw 80vh 1px 4px #930f57, -22vw 75vh 3px 4px #2687bd, 59vw 75vh 4px 2px #127c65, -36vw 73vh 4px 3px #d0719a, 74vw 116vh 3px 3px #3415be, -40vw 118vh 7px 5px #ef1176, 50vw 98vh 1px 5px #a2877c, -31vw 63vh 4px 4px #95cd79, 44vw 148vh 1px 1px #d6a939, -67vw 108vh 8px 4px #65bc77, 76vw 93vh 3px 4px #858d9f, -6vw 114vh 5px 1px #a357e9, 20vw 110vh 3px 1px #65e0bb, -32vw 111vh 4px 5px #99c416, 27vw 84vh 4px 5px #368252, -72vw 62vh 6px 1px #d17a8c, 92vw 61vh 2px 2px #c2ad28, -60vw 121vh 2px 1px #31f1a0, 71vw 101vh 7px 2px #943ba5, -91vw 141vh 4px 5px #724348, 67vw 99vh 3px 4px #cde6c2, -9vw 55vh 6px 5px #e2bfa3, 63vw 117vh 8px 4px #075ee5, -65vw 117vh 5px 4px #d73c48, 79vw 128vh 8px 4px #422876, -32vw 128vh 3px 1px #559169, 74vw 95vh 3px 1px #d47817, -12vw 66vh 5px 2px #8bb0e1;
+  }
+}

@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas");
+body, html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.center {
+  width: 360px;
+  margin: 0 auto;
+}
+
+.container {
+  margin-top: 150px;
+  width: 50px;
+  height: 10px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.heart {
+  color: oldlace;
+  font-size: 25px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  animation-name: movement;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.anim1 {
+  animation-delay: 1s;
+}
+
+.anim2 {
+  animation-delay: 1.5s;
+}
+
+.anim3 {
+  animation-delay: 0.5s;
+}
+
+.anim4 {
+  animation-delay: 1.9s;
+}
+
+@keyframes movement {
+  0% {
+    bottom: 0;
+    right: 50px;
+  }
+  20% {
+    color: hotpink;
+    right: 40px;
+  }
+  40% {
+    right: 60px;
+  }
+  50% {
+    right: 50px;
+  }
+  60% {
+    right: 40px;
+  }
+  70% {
+    right: 50px;
+  }
+  80% {
+    right: 45px;
+  }
+  90% {
+    right: 50px;
+  }
+  100% {
+    bottom: 150px;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+  }
+}
+.wish {
+  text-align: center;
+  font-family: "Mountains of Christmas", cursive;
+  font-size: 48px;
+  color: white;
+}
+
+.ball, .tree-wrapper .tree .decoration7, .tree-wrapper .tree .decoration6, .tree-wrapper .tree .decoration5, .tree-wrapper .tree .decoration4, .tree-wrapper .tree .decoration3, .tree-wrapper .tree .decoration2, .tree-wrapper .tree .decoration1, .tree-wrapper .tree .decoration {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: -webkit-radial-gradient(#ffffff, #fd131a, #f74c4b);
+  background: -moz-radial-gradient(#ffffff, #fd131a, #f74c4b);
+  background: radial-gradient(#ffffff, #fd131a, #f74c4b);
+  position: absolute;
+}
+
+.tree-wrapper {
+  background: #19808f;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.tree-wrapper .tree {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+.tree-wrapper .tree .tree-top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -25px;
+  margin: 0 auto;
+  display: block;
+  color: #f5c733;
+  width: 0px;
+  height: 0px;
+  border-right: 33px solid transparent;
+  border-bottom: 22px solid #f5c733;
+  border-left: 30px solid transparent;
+  -moz-transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+}
+.tree-wrapper .tree .tree-top:before {
+  border-bottom: 30px solid #f5c733;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -18px;
+  left: -22px;
+  display: block;
+  content: "";
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+}
+.tree-wrapper .tree .tree-top:after {
+  position: absolute;
+  display: block;
+  color: #f5c733;
+  top: 3px;
+  left: -30px;
+  width: 0px;
+  height: 0px;
+  border-right: 33px solid transparent;
+  border-bottom: 21px solid #f5c733;
+  border-left: 30px solid transparent;
+  -webkit-transform: rotate(-70deg);
+  -moz-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  -o-transform: rotate(-70deg);
+  content: "";
+}
+.tree-wrapper .tree .tree-leave-1 {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 70px solid #27ae60;
+  margin: 0 auto;
+  position: relative;
+}
+.tree-wrapper .tree .tree-leave-2 {
+  width: 0;
+  height: 0;
+  border-left: 115px solid transparent;
+  border-right: 115px solid transparent;
+  border-bottom: 115px solid #27ae60;
+  margin: 0 auto;
+  margin-top: -25px;
+  position: relative;
+}
+.tree-wrapper .tree .tree-leave-3 {
+  width: 0;
+  height: 0;
+  border-left: 140px solid transparent;
+  border-right: 140px solid transparent;
+  border-bottom: 140px solid #27ae60;
+  margin: 0 auto;
+  margin-top: -40px;
+  position: relative;
+}
+.tree-wrapper .tree .tree-stem {
+  width: 40px;
+  height: 100px;
+  background: #856919;
+  margin: 0 auto;
+  display: block;
+}
+.tree-wrapper .tree .decoration {
+  top: 5%;
+  left: 49%;
+}
+.tree-wrapper .tree .decoration1 {
+  top: 13%;
+  left: 52%;
+}
+.tree-wrapper .tree .decoration2 {
+  top: 25%;
+  left: 50%;
+}
+.tree-wrapper .tree .decoration3 {
+  top: 36%;
+  right: 54%;
+}
+.tree-wrapper .tree .decoration4 {
+  top: 41%;
+  left: 55%;
+}
+.tree-wrapper .tree .decoration5 {
+  top: 50%;
+  right: 51%;
+}
+.tree-wrapper .tree .decoration6 {
+  top: 68%;
+  left: 44%;
+}
+.tree-wrapper .tree .decoration7 {
+  top: 59%;
+  left: 54%;
+}
+.tree-wrapper #snowFall {
+  background: none;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/426955/S1.png"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/426955/S2.png"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/426955/S3.png");
+  -webkit-animation: snowFall 10s linear infinite;
+  -moz-animation: snowFall 10s linear infinite;
+  -ms-animation: snowFall 10s linear infinite;
+  animation: snowFall 10s linear infinite;
+}
+.tree-wrapper #snowFall .wish {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+}
+@-webkit-keyframes snowFall {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+@-moz-keyframes snowFall {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+@-ms-keyframes snowFall {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+@keyframes snowFall {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}

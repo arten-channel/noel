@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: #39b4d1;
+  font-family: "lobster", sans-serif;
+  color: #0f3038;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.salutations {
+  font-size: 1.5em;
+  width: auto;
+  padding-left: 1em;
+}
+.salutations h2 {
+  -webkit-animation-name: whitePulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.tree {
+  min-width: 60vw;
+  flex: 1 1 100%;
+  max-width: 60rem;
+}
+
+.ornament-container {
+  flex: 0 1 30%;
+  padding: 1rem;
+}
+
+.ornament {
+  width: 2rem;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+}
+.ornament:before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 5px;
+  background: gray;
+}
+
+.tree-lights {
+  position: relative;
+  -webkit-mask: url("https://i.imgur.com/JNcI1UK.png") no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center center;
+  mask-position: center center;
+  background-color: #253f0b;
+  text-align: center;
+  overflow: hidden;
+}
+
+.light {
+  position: relative;
+  z-index: 8;
+  width: 0.5vw;
+  height: 0.5vw;
+  min-height: 3px;
+  min-width: 3px;
+  max-width: 1rem;
+  max-height: 1rem;
+  border-radius: 10em;
+}
+
+.pulse-red {
+  -webkit-animation-name: pulseRed;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.pulse-yellow {
+  -webkit-animation-name: pulseYellow;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.pulse-blue {
+  -webkit-animation-name: pulseBlue;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.fade-single {
+  -webkit-animation: pulseYellow 5s, pulseBlue 5s, pulseRed 5s;
+  -webkit-animation-delay: 0s, 5s, 10s;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes whitePulse {
+  from {
+    text-shadow: 0 0 20px rgba(95, 242, 242, 0.8);
+  }
+  50% {
+    text-shadow: 0 0 50px #f7f7f7;
+  }
+  to {
+    text-shadow: 0 0 20px rgba(95, 242, 242, 0.8);
+  }
+}
+@-webkit-keyframes pulseRed {
+  from {
+    background-color: #992626;
+    -webkit-box-shadow: 0 0 3px #992626;
+  }
+  50% {
+    background-color: #ff4040;
+    -webkit-box-shadow: 0 0 10px #992626;
+  }
+  to {
+    background-color: #992626;
+    -webkit-box-shadow: 0 0 3px #992626;
+  }
+}
+@-webkit-keyframes pulseYellow {
+  from {
+    background-color: #99996d;
+    -webkit-box-shadow: 0 0 3px #99996d;
+  }
+  50% {
+    background-color: #ffffb5;
+    -webkit-box-shadow: 0 0 10px #99996d;
+  }
+  to {
+    background-color: #99996d;
+    -webkit-box-shadow: 0 0 3px #99996d;
+  }
+}
+@-webkit-keyframes pulseBlue {
+  from {
+    background-color: #133aac;
+    -webkit-box-shadow: 0 0 3px #133aac;
+  }
+  50% {
+    background-color: #4776ff;
+    -webkit-box-shadow: 0 0 10px #133aac;
+  }
+  to {
+    background-color: #133aac;
+    -webkit-box-shadow: 0 0 3px #133aac;
+  }
+}

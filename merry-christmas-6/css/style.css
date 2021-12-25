@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+
+body {
+  background-color: #F24236;
+  width: 100%;
+  font-family: 'Cookie', cursive;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+#days {
+  font-size: 50px;
+  color: #FFF;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.drop {
+	position: absolute;
+	top: 0;	
+	z-index: -1;
+  opacity: 0;
+}
+.snow {
+	height: 8px;
+	width: 8px;
+	border-radius: 100%;
+	background-color: #FFF;
+  box-shadow: 0 0 10px #FFF
+}
+
+
+.animate {
+	animation: falling 8.5s infinite ease-in;	
+}
+
+
+@keyframes falling {
+	0% {top: 0; opacity: 1;}
+	100% {top: 1500px; opacity: 0}
+}
+

@@ -1,0 +1,49 @@
+body {
+  background-color: #1C1C51;
+  display: flex;
+  font-family: "tamarillo-jf";
+}
+
+h1 {
+  font-size: 6em;
+  color: white;
+  text-align: center;
+  margin: 25px;
+}
+
+.anim-container {
+  flex: 1;
+}
+
+.vbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.hbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.align-center {
+  justify-content: center;
+}
+
+.switch {
+  position: absolute;
+  cursor: pointer;
+  margin: 250px 100px 0px 0px;
+}
+
+.light {
+  opacity: 0.55;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  background-size: 100% 100%;
+}

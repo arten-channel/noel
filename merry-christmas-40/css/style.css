@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+body {
+	text-align: center;
+	background: #222;
+	color: #fff;
+  background-image: url("https://images.unsplash.com/photo-1467810563316-b5476525c0f9?dpr=0.8999999761581421&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=");
+  background-size: cover;
+}
+
+h1 {
+	font-family: 'Lobster Two', cursive;
+	font-weight: 300;
+	font-size: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	width: 100%;
+}
+
+.visually-hidden {
+	position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}
+
+/* code for animated blinking cursor */
+.typed-cursor{
+	opacity: 1;
+	font-weight: 100;
+	animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width: 715px){
+  h1{
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  h1{
+    font-size: 50px;
+  }
+}

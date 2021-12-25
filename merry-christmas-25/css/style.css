@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+body, html{
+	position: relative;
+	margin: 0;
+}
+
+div{
+  left: -999999px;
+  position: absolute;
+  z-index: 0;
+}
+
+#c{
+  font-family: 'Pacifico', cursive;
+  position: absolute;
+  cursor: pointer;
+  z-index: 9999;
+}

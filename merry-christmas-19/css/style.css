@@ -1,0 +1,407 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #FFF1C8;
+}
+body:after {
+  display: block;
+  background: #E74700;
+  height: 20%;
+}
+
+.main {
+  text-align: center;
+  width: 850px;
+  margin: 0 auto;
+}
+
+.santa {
+  float: right;
+  margin-right: 180px;
+}
+
+.face {
+  overflow: hidden;
+  background: #F1E6D9;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+.face .mouth {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background: #fff;
+  left: 0;
+  bottom: 0;
+  border-radius: 0 0 200px 200px;
+}
+.face .mouth .nose {
+  background: #F59699;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: -8px;
+  position: absolute;
+}
+.face .mouth:before, .face .mouth:after {
+  content: "";
+  display: inline-block;
+  width: 70px;
+  height: 36px;
+  background: #F1E6D9;
+}
+.face .mouth:before {
+  border-radius: 70px 0;
+}
+.face .mouth:after {
+  border-radius: 0 70px;
+}
+
+.eyes {
+  width: 140px;
+  height: 70px;
+  background: #F5D2B9;
+  border-radius: 140px 140px 0 0;
+  margin: 30px auto 0;
+  overflow: hidden;
+  font-size: 0;
+}
+.eyes .left, .eyes .right {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.eyes .left:before, .eyes .right:before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: #F59699;
+  position: absolute;
+  bottom: -30px;
+  border-radius: 60px;
+}
+.eyes .left:after, .eyes .right:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  background: #fff;
+  top: 20px;
+}
+.eyes .left span, .eyes .right span {
+  background: #0072CB;
+  width: 15px;
+  height: 15px;
+  display: block;
+  border-radius: 15px;
+  margin-top: 43px;
+}
+.eyes .left {
+  background: #F2C2A0;
+}
+.eyes .left:before {
+  left: -30px;
+}
+.eyes .left:after {
+  left: 27px;
+  border-radius: 36px 0;
+}
+.eyes .left span {
+  margin-left: 39px;
+}
+.eyes .right:before {
+  right: -30px;
+}
+.eyes .right:after {
+  right: 27px;
+  border-radius: 0 36px;
+}
+.eyes .right span {
+  margin-left: 16px;
+}
+
+.body {
+  width: 200px;
+  height: 250px;
+  background: #E74700;
+  border-radius: 200px;
+  z-index: -1;
+  position: relative;
+  top: -100px;
+}
+.body:after {
+  content: "";
+  background: #F1E6D9;
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 74px;
+}
+
+.left-hand {
+  width: 80px;
+  height: 50px;
+  border-bottom: 40px solid #E74700;
+  border-left: 40px solid #E74700;
+  border-bottom-left-radius: 200px;
+  position: absolute;
+  left: -90px;
+  top: -10px;
+}
+
+.right-hand {
+  background: #E74700;
+  width: 200px;
+  border-radius: 200px 200px 0 0;
+  left: 40px;
+  height: 120px;
+  position: relative;
+  top: 30px;
+}
+
+.left-hand:before, .right-hand:before {
+  content: "";
+  background: #fff;
+  height: 20px;
+  display: block;
+  position: absolute;
+  width: 47px;
+}
+.left-hand:after, .right-hand:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background: #F5D2B9;
+}
+
+.left-hand:before {
+  left: -44px;
+  transform: rotate(-11deg);
+  top: -8px;
+}
+.left-hand:after {
+  left: -44px;
+  top: -28px;
+  transform: rotate(-11deg);
+  border-radius: 40px 40px 0 0;
+}
+
+.right-hand {
+  z-index: -1;
+}
+.right-hand:before {
+  right: 0px;
+  bottom: -10px;
+  width: 40px;
+}
+.right-hand:after {
+  right: 0px;
+  bottom: -30px;
+  border-radius: 0 0 40px 40px;
+}
+
+.cap {
+  width: 130px;
+  height: 50px;
+  background: #E74700;
+  border-radius: 100px 0;
+  position: relative;
+  top: 50px;
+  left: 70px;
+}
+.cap:before, .cap:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  background: #fff;
+}
+.cap:before {
+  border-radius: 30px 0;
+  right: -30px;
+  top: -15px;
+}
+.cap:after {
+  border-radius: 0 30px;
+  right: -30px;
+  top: 0px;
+}
+
+.belt {
+  height: 35px;
+  background: #3A1200;
+}
+.belt:before, .belt:after {
+  content: "";
+  height: 35px;
+  width: 17px;
+  background: #E74700;
+  position: absolute;
+}
+.belt:before {
+  left: 35px;
+}
+.belt:after {
+  right: 35px;
+}
+.belt .buckle {
+  box-sizing: border-box;
+  border: 10px solid #FFDF17;
+  width: 46px;
+  margin: 0 auto;
+  height: 35px;
+  display: inline-block;
+  position: relative;
+}
+.belt .buckle:after {
+  content: "";
+  height: 5px;
+  width: 15px;
+  display: block;
+  background: #FFDF17;
+  position: absolute;
+  right: -2px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+.legs {
+  width: 46px;
+  height: 46px;
+  background: #FFF1C8;
+  /* background: blue; */
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.legs:before, .legs:after {
+  content: "";
+  background: #3A1200;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+}
+.legs:before {
+  border-top-left-radius: 20px;
+  left: -23px;
+  bottom: 0;
+}
+.legs:after {
+  border-top-right-radius: 20px;
+  right: -23px;
+  bottom: 0;
+}
+
+.gift {
+  width: 130px;
+  height: 100px;
+  background: #0072CB;
+  position: relative;
+  left: 40px;
+  display: inline-block;
+}
+.gift:before {
+  content: "";
+  height: 30px;
+  display: block;
+  background: #0069B9;
+}
+.gift .ribbon {
+  height: 100%;
+  width: 20px;
+  background: #E74700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.gift .ribbon:before, .gift .ribbon:after {
+  content: "";
+  width: 40px;
+  height: 20px;
+  background: #E74700;
+  position: absolute;
+  border-radius: 40px 0;
+  top: -20px;
+}
+.gift .ribbon:before {
+  left: -30px;
+  border-radius: 0 40px;
+}
+.gift.orange {
+  background: #FFAC05;
+  height: 200px;
+}
+.gift.orange:before {
+  background: #FF8D17;
+}
+.gift.purple {
+  background: #9B70FF;
+  height: 250px;
+}
+.gift.purple:before {
+  background: #844EFF;
+}
+
+.gift-holder {
+  float: left;
+  position: absolute;
+  top: 180px;
+}
+.gift-holder .gift:first-child {
+  left: 90px;
+  z-index: 1;
+}
+.gift-holder .gift:last-child {
+  left: -10px;
+}
+
+.text {
+  text-align: center;
+  font-family: "Mountains of Christmas", cursive;
+  font-size: 50px;
+  position: relative;
+  top: -80px;
+  font-weight: bold;
+}

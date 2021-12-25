@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Mountains+of+Christmas);
+
+body{
+  background:#be050b;
+  margin:0;
+  height:100%;
+  overflow:hidden;
+  
+}
+a{
+  text-decoration:none;
+}
+canvas{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1;
+}
+.ground{
+  background:#FFF;
+  height:20%;width:100%;
+  position:absolute;
+  bottom:0px;
+  z-index:1;
+  border-radius:100% 100% 0 0;
+  font-size:10px;
+  color:#666;
+  display:table;
+}
+.ground p{
+  display: table-cell; 
+  vertical-align: middle;
+  text-align:center;
+  width:100%;
+}
+.message{
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 400%;
+  text-align:center;
+  color:#FFF;
+  margin:40px auto;
+  height: 20%
+}
+.trees{
+  background: url(http://www.arasthemes.com/files/xmas/trees.svg) no-repeat center;
+  background-size: contain;
+  width:100%;
+  position:absolute;
+  bottom: 18%;
+  height: 60%;
+}

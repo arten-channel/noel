@@ -1,0 +1,26 @@
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #f2adab;
+  }
+  
+  .box {
+    position: fixed;
+    left: calc(50vw - 50vmin);
+    top: calc(50vh - 37.5vmin);
+    width: 100vmin;
+    height: 75vmin;
+  }
+  
+  svg {
+    overflow: visible;
+  }
+  
+  #snow {
+    pointer-events: none;
+  }
+  
+  .snow-clone {
+    opacity: 0;
+  }

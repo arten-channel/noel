@@ -1,0 +1,51 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: rgba(75, 75, 76, 1);
+  font-size: 62.5%;
+}
+
+section {
+  background: url(../images/winter.jpg);
+  width: 700px;
+  height: 500px;
+  color: white;
+  position: relative;
+  margin: auto;
+}
+
+#snowman {
+  width: 13%;
+  margin-bottom: -47%;
+  margin-left: 5%;
+  transform: rotateZ(5deg);
+  -webkit-transform: rotateZ(5deg);
+}
+
+h1 {
+  font-family: "Dancing Script OT";
+  font-size: 5em;
+  padding-top: 0.5em;
+}
+
+section h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 37px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  font-family: "vshandprinted";
+}
+
+span {
+  font-family: "Dancing Script OT";
+  font-weight: bold;
+  font-size: 30px;
+}

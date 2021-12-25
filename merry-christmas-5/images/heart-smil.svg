@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="16px" height="16px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<g id="heart" style="fill:#E74C3C;">
+	
+	<rect x="6.6" y="8" transform="matrix(0.7071 0.7071 -0.7071 0.7071 16.9588 -6.1792)" width="18.7" height="18.7"/>
+	<circle cx="9.3" cy="10.7" r="9.3"/>
+	<circle cx="22.6" cy="10.7" r="9.3"/>
+  
+	
+</g>
+  <animate 
+           xlink:href="#heart"
+           attributeName="fill"
+           from="#E74C3C"
+           to="#c0392b" 
+           dur="1s"
+           begin="0s"
+           repeatCount="indefinite"
+           />
+</svg>
